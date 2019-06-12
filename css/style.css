@@ -1,0 +1,150 @@
+body { /*Formatação do corpo*/
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background-image: url(../imagens/fundo.jpg);
+	background-size: auto;
+	margin: auto;
+}
+
+/*FORMATAÇÃO MENU*/
+#menu ul { /*Parte da tag ul*/
+	margin: auto;
+	background-color: #000000;
+	list-style: none;
+}
+
+#menu ul li { /*Parte da tag li*/
+	display: inline;
+}
+
+#menu ul li a { /*Parte da tag a*/
+	padding: 10px 10px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/*FORMATAÇÃO FORM*/
+.container { /*Formatação div da área de login e cadastro*/
+	margin: auto;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.form-signin { /*Formatação geral do form do login*/
+	font-family: Verdana, Geneva, sans-serif;
+	max-width: 330px;
+	padding: 45px;
+	margin-left: 38%;
+	color: #0B0B3B;
+	overflow: hidden;
+}
+
+.form-cadastro { /*Formatação geral do form de cadastro*/
+	font-family: Verdana, Geneva, sans-serif;
+	max-width: 330px;
+	padding: 45px;
+	margin-left: 38%;
+	color: #0B0B3B;
+	overflow: hidden;
+	position: absolute;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox { /*Formatação margem do título e checkbox*/
+	margin-bottom: 10px;
+	margin-left: 20%;
+}
+
+.form-cadastro .form-cadastro-heading,
+.form-cadastro .checkbox {
+	margin-bottom: 10px;
+	margin-left: 20%;
+}
+
+/*FORMATAÇÃO BOTÕES*/
+.buttonEntrar{
+	margin-right: 50%;
+	margin-left: 28%;
+	margin-top: 3%;
+	font-size: 20px;
+}
+
+.buttonCadastrar {
+	margin-right: 50%;
+	margin-left: 28%;
+	margin-top: 3%;
+	font-size: 20px;
+}
+
+.buttonCancelar {
+	margin-right: 50%;
+	margin-left: 28%;
+	margin-top: 3%;
+	font-size: 20px;
+}
+
+
+.buttonCadastro {
+	font-size: 15px;
+}
+
+/*FORMATAÇÃO CAIXA DE TEXTO E TEXTO*/
+#txtEmail {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txtSenha {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txtNome {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txtSexo {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txtNascimento {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txtCidade {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txtEstado {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#pwdSenha {
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+#txt {
+	font-size: 15px;
+	color: #0B0B3B;
+	margin-left: 5%;
+}
+
