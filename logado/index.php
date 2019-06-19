@@ -1,6 +1,6 @@
 <?php
   session_start();
-  require_once("servidor.php");
+  require_once("dbconnect.php");
 
   if (!empty($_SESSION['mensagem'])) {
     echo $_SESSION['mensagem'];
@@ -11,8 +11,10 @@
     $id = $_SESSION['id'];
     $nome = $_SESSION['nome'];
   } else {
-    $_SESSION['mensagem'] = "Você não está logado";
-    header("location:../");
+    echo "<script language='javascript' type='text/javascript'>
+        alert('Você não está logado!');
+        window.location.href='../';
+    </script>";
     exit;
   }
 ?>
@@ -21,7 +23,7 @@
   <head>
     <meta charset="utf-8">
     <title>Página Inicial</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
     Bem-vindo(a), <?=$nome?>, seu código é <?=$id?><br>
