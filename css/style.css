@@ -9,7 +9,7 @@ body { /*Formatação do corpo*/
 /*FORMATAÇÃO MENU*/
 #menu ul { /*Parte da tag ul*/
 	margin: auto;
-	background-color: #000000;
+	background-color: #DBA901;
 	list-style: none;
 }
 
@@ -25,7 +25,7 @@ body { /*Formatação do corpo*/
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-/*FORMATAÇÃO FORM*/
+/*FORMATAÇÃO FORM GERAL*/
 .container { /*Formatação div da área de login e cadastro*/
 	margin: auto;
 	position: absolute;
@@ -35,116 +35,116 @@ body { /*Formatação do corpo*/
 	right: 0;
 }
 
-.form-signin { /*Formatação geral do form do login*/
+/*FORMATAÇÃO FORM LOGIN*/
+.form-signin {
 	font-family: Verdana, Geneva, sans-serif;
 	max-width: 330px;
 	padding: 45px;
 	margin-left: 38%;
-	color: #0B0B3B;
+	color: #DBA901;
 	overflow: hidden;
 }
 
+.form-signin .form-signin-heading,
+.form-signin .checkbox { /* Formatação margem do Título e do Checkbox */
+	margin-bottom: 10px;
+	margin-left: 20%;
+}
+
+/*FORMATAÇÃO FORM RECUPERAÇÃO DE SENHA*/
+.form-recuperacao { /*Formatação geral do form da recuperação de senha*/
+	font-family: Verdana, Geneva, sans-serif;
+	max-width: 300px;
+	padding: 50px;
+	margin-left: 38%;
+	color: #DBA901;
+	overflow: hidden;
+}
+
+.form-recuperacao .form-recuperacao-heading,
+.form-recuperacao .checkbox { /* Formatação margem do Título e do Checkbox */
+	margin-bottom: 20px;
+	margin-left: 0%;
+}
+
+/*FORMATAÇÃO FORM DE CADASTRO*/
 .form-cadastro { /*Formatação geral do form de cadastro*/
 	font-family: Verdana, Geneva, sans-serif;
 	max-width: 330px;
 	padding: 45px;
 	margin-left: 38%;
-	color: #0B0B3B;
+	color: #DBA901;
 	overflow: hidden;
 	position: absolute;
 }
 
-.form-signin .form-signin-heading,
-.form-signin .checkbox { /*Formatação margem do título e checkbox*/
-	margin-bottom: 10px;
-	margin-left: 20%;
-}
-
 .form-cadastro .form-cadastro-heading,
-.form-cadastro .checkbox {
+.form-cadastro .checkbox { /* Formatação margem do Título e do Checkbox */
 	margin-bottom: 10px;
 	margin-left: 20%;
 }
 
-/*FORMATAÇÃO BOTÕES*/
-.buttonEntrar{
+/*FORMATAÇÃO FORM DE ALTERAÇÃO DE SENHA*/
+.form-alteracao { /*Formatação geral do form de cadastro*/
+	font-family: Verdana, Geneva, sans-serif;
+	max-width: 330px;
+	padding: 45px;
+	margin-left: 38%;
+	color: #DBA901;
+	overflow: hidden;
+	position: absolute;
+}
+
+.form-alteracao .form-alteracao-heading,
+.form-alteracao .checkbox { /* Formatação margem do Título e do Checkbox */
+	margin-bottom: 10px;
+	margin-left: 20%;
+}
+
+.button { /* Formatação da fonte do botão */
 	margin-right: 50%;
 	margin-left: 28%;
 	margin-top: 3%;
 	font-size: 20px;
 }
-
-.buttonCadastrar {
-	margin-right: 50%;
-	margin-left: 28%;
-	margin-top: 3%;
-	font-size: 20px;
-}
-
-.buttonCancelar {
-	margin-right: 50%;
-	margin-left: 28%;
-	margin-top: 3%;
-	font-size: 20px;
-}
-
-
-.buttonCadastro {
-	font-size: 15px;
-}
-
-/*FORMATAÇÃO CAIXA DE TEXTO E TEXTO*/
-#txtEmail {
+#email{
 	margin-top: 2%;
 	font-size: 20px;
-	margin-left: 5%;
 }
 
-#txtSenha {
+#senha{
 	margin-top: 2%;
 	font-size: 20px;
-	margin-left: 5%;
 }
 
-#txtNome {
+#nascimento{
 	margin-top: 2%;
 	font-size: 20px;
-	margin-left: 5%;
 }
 
-#txtSexo {
+#nome{
 	margin-top: 2%;
 	font-size: 20px;
-	margin-left: 5%;
 }
 
-#txtNascimento {
+#pass{
 	margin-top: 2%;
 	font-size: 20px;
-	margin-left: 5%;
 }
 
-#txtCidade {
+#pass_confirm{
 	margin-top: 2%;
 	font-size: 20px;
-	margin-left: 5%;
 }
 
-#txtEstado {
-	margin-top: 2%;
-	font-size: 20px;
-	margin-left: 5%;
+.link {
+	font-size: 10px;
 }
 
-#pwdSenha {
-	margin-top: 2%;
-	font-size: 20px;
-	margin-left: 5%;
+#curso{
+	width: 50%;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 200px;
+	margin-bottom: 3px;
 }
-
-#txt {
-	font-size: 15px;
-	color: #0B0B3B;
-	margin-left: 5%;
-}
-
