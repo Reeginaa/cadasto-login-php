@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include_once("servidor.php");
+  include_once("dbconnect.php");
 
   if (isset($_POST['enviar'])) {
     if (!empty($_POST['email']) || !empty($_POST['senha'])) {
@@ -17,13 +17,17 @@
         header("location:logado/");
         exit;
       } else {
-        $_SESSION['mensagem'] = "E-mail ou Senha incorretos";
-        header ("location:indexLogin.php");
+        echo "<script language='javascript' type='text/javascript'>
+            alert('E-mail ou senha incorretos!');
+            window.location.href='indexLogin.php';
+        </script>";
         exit;
       }
     } else {
-      $_SESSION['mensagem'] = "Campo obrigatório não informado";
-      header ("location:indexLogin.php");
+      echo "<script language='javascript' type='text/javascript'>
+          alert('Campo obrigatório não informado');
+          window.location.href='indexLogin.php';
+      </script>";
       exit;
     }
   } else {

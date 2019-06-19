@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include_once("servidor.php");
+  include_once("dbconnect.php");
 
   if(isset($_GET['enviar'])) {
     if (!empty($_GET['nome']) || !empty($_GET['nascimento']) || !empty($_GET['email']) || !empty($_GET['senha'])) {
@@ -12,17 +12,23 @@
       $comando = "INSERT INTO usuarios(nome, dataNascimento, email, senha) VALUES('$nome', '$nascimento', '$email', '$senha')";
       $enviar = mysqli_query($conn, $comando);//primeiro conexão depois comando
       if ($enviar) {
-        $_SESSION['mensagem'] = "Cadastrado com Sucesso";
-        header("location:indexLogin.php");
+        echo "<script language='javascript' type='text/javascript'>
+            alert('Cadastrado com Sucesso!');
+            window.location.href='indexLogin.php';
+        </script>";
         exit;
       } else {
-        $_SESSION['mensagem'] = "Erro ao Cadastrar";
-        header("location: formCadastro.php");
+        echo "<script language='javascript' type='text/javascript'>
+            alert('Erro ao cadastrar!');
+            window.location.href='formCadastro.php';
+        </script>";
         exit;
       }
     } else {
-      $_SESSION['mensagem'] = "Campo obrigatório não informado";
-      header("location:formCadastro.php");
+      echo "<script language='javascript' type='text/javascript'>
+          alert('Campo obrigatório não informado!');
+          window.location.href='formCadastro.php';
+      </script>";
       exit;
     }
   } else {

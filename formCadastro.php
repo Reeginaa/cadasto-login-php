@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include_once("servidor.php");
+  include_once("dbconnect.php");
   if (!empty($_SESSION['mensagem'])) {
     echo $_SESSION['mensagem'];
     unset($_SESSION['mensagem']);
@@ -17,19 +17,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div id="formCadastro">
-      <form action="cadastrar.php" method="get" accept-charset="utf-8">
-        Nome Completo<br>
-        <input type="text" name="nome"><br>
-        Data de Nascimento<br>
-        <input type="date" name="nascimento"><br>
-        E-mail<br>
-        <input type="text" name="email"><br>
-        Senha<br>
-        <input type="password" name="senha"><br>
-        <input type="submit" name="enviar"value="Cadastrar">
+    <div id="menu">
+			<ul>
+				<li><a href="home.php">Home</a></li>
+				<li><a href="indexLogin.php">Entrar</a></li>
+			</ul>
+		</div>
+    <div class="container">
+      <form action="cadastrar.php" method="post" accept-charset="utf-8" class="form-cadastro">
+        <h1 class="form-cadastro-heading">Cadastro</h1>
+        <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br>
+        <input type="date" name="nascimento" id="nascimento" placeholder="Data de Nascimento"><br>
+        <input type="mail" name="email" id="email" placeholder="E-mail"><br>
+        <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+        <input type="submit" class="button" name="enviar" value="Cadastrar">
       </form>
-    </div> 
-    <br><a href="indexLogin.php"><button>Voltar</button></a>
+    </div>
   </body>
 </html>
